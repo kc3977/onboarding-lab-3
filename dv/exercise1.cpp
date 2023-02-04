@@ -11,7 +11,8 @@ int main() {
         if(model.op == 1) {
           if((model.a << model.b) != model.out) wrong = true;}
         if(model.op == 2) {
-          if((model.a % model.b) != model.out) wrong = true;}
+          if(model.b != 0){
+          if((model.a % model.b) != model.out) wrong = true;}}
         if(model.op == 0) {
           if((~(model.a & model.b)) != model.out) wrong = true;}
       }
